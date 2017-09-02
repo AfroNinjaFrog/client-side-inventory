@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand text-primary" >{{title}} <i class="fa fa-list-alt fa-lg fa-fw"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a routerLink="/dashboard" routerLinkActive="active" class="nav-item nav-link active" href="#">Dashboard</a>
+            <a routerLink="/heroes" routerLinkActive="active" class="nav-item nav-link" href="#">Heroes</a>
+        </div>
+    </div>
+</nav>
+<router-outlet></router-outlet>
