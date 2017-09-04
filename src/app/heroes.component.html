@@ -15,8 +15,8 @@
 </div>
 
 <div class="container">
-<table class="table table-sm table-inverse table-hover">
-  <thead>
+<table class="table table-sm table-striped table-hover">
+  <thead class="thead-inverse">
     <tr>
       <th>#</th>
       <th>First Name</th>
@@ -31,9 +31,23 @@
       <td>{{hero.name}}</td>
       <td><button (click)="gotoDetail(hero.id)">View Details</button></td>
       <td><button class="delete"
-      (click)="delete(hero); $event.stopPropagation()">x</button></td>
+      (click)="confirmation(heroes); $event.stopPropagation()">x</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+    </td>
+      <td>
+        {{hero.sure}}
+      </td>
     </tr>
     
   </tbody>
 </table>
+</div>
+
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
 </div>

@@ -32,7 +32,6 @@ export class HeroesComponent implements OnInit {
         this.selectedHero = null;
       });
   }
-
   delete(hero: Hero): void {
     this.heroService
         .delete(hero.id)
