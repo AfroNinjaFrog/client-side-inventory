@@ -50,6 +50,9 @@ var HeroesComponent = (function () {
         this.getHeroes();
     };
     HeroesComponent.prototype.onSelect = function (hero) {
+        if (this.show == undefined) {
+            this.show = true;
+        }
         this.selectedHero = hero;
     };
     HeroesComponent.prototype.gotoDetail = function (id) {

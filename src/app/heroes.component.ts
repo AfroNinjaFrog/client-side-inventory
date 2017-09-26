@@ -10,8 +10,9 @@ import { HeroService }         from './hero.service';
   styleUrls: [ './heroes.component.css' ]
 })
 export class HeroesComponent implements OnInit {
-  heroes: Hero[];
+  heroes: String[];
   selectedHero: Hero;
+  show: Boolean;
 
   constructor(
     private heroService: HeroService,
@@ -46,6 +47,9 @@ export class HeroesComponent implements OnInit {
   }
 
   onSelect(hero: Hero): void {
+    if (this.show == undefined) {
+      this.show = true;
+    }
     this.selectedHero = hero;
   }
 

@@ -9,7 +9,7 @@ import { HeroService } from './hero.service';
   styleUrls: [ './dashboard.component.css' ]
 })
 export class DashboardComponent implements OnInit {
-  heroes: Hero[] = [];
+  heroes: String[] = [];
 
   constructor(private heroService: HeroService) { }
 
